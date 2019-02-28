@@ -1,4 +1,4 @@
-var w = 350,
+var w = screen.width/3,
 	h = 350;
 
 var colorscale = d3.scale.category10();
