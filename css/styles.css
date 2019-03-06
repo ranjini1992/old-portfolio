@@ -18,7 +18,7 @@
 }
 
 .text_1::after, .text_2::after {
-  content: "|";
+  content: "";
   position: absolute;
   right: 0;
   animation: caret infinite;
@@ -32,7 +32,7 @@
   }
   
   60%, 90% {
-    width: 8em;
+    width: 7.6em;
   }
 }
 
@@ -41,7 +41,7 @@
     width: 0;
   }
   10%, 40% {
-    width: 15.3em;
+    width: 15.2em;
   }
 }
 
