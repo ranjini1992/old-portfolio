@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fitness Tracker Visualizations</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+     <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="https://ranjiniaravind.com">HOME</a>
+            </li>
+        </ul>
+    </header>
+        <div id="lead">
+        <div id="lead-content">
+            <p style="font-size: 36px; color: rgb(32,90,90);">Microvisualizations on Fitness Trackers</p>
+             <div class="col-md-6">
+                <img src="images/fitness.png" />
+            </div>
+            <div class="col-md-6" style="text-align: left">
+                <h3>Visualization Research Intern</h3>
+                
+                <p>
+                February 2019 - July 2019<br><br>Inria France
+                
+                 </p>
+             </div>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+    </div>
+    <div id="projects" class="background-alt">
+        <h2 class="heading" style="color: rgb(32,90,90);">AIM</h2>
+        <div style="text-align:center; padding-left: 3em; padding-right: 3em">
+            <ul>
+                <li> How do wearers of fitness bands and smartwatches perceive micro visualizations displayed on their tracker? </li>
+                <li> Are there any specific types of visualization that are particularly of interest to them? </li>
+                <li> Does the size of the visualizations on small screens affect glanceability (quick peeks at a tracker for less than 5 seconds)? </li>
+            </ul>  
+        </div>
+    </div>
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading" style="color: rgb(32,90,90);">INTERVIEWS AND CARD SORTING</h2>
+        <div style="text-align:left; padding-left: 3em; padding-right: 3em">
+        <p>With the guidance of my supervisors, I conducted 10 semi-structured interviews with regular wearers of fitness trackers (e.g. Apple Watch, Fitbit, Garmin, Xiaomi) to find out how often they use their tracker, what types of data they track and which insights do they pay more attention to.</p>
+
+        <p>Then, without looking at their fitness tracker, I asked them to roughly sketch on a sheet of paper what types of data they remembered seeing on their wearable and how they are visualized. Then, I asked them how their use of the associated phone or web app differed from their use of the fitness tracker. </p>
+        </div>
+        <img src="images/interview_drawing.png" width="30%" />
+         <div style="text-align:left; padding-left: 3em; padding-right: 3em">
+        <p>Figure 1: One of the participants drew the current visualizations she remembered seeing on her tracker on the top half. In the bottom half, she gave suggestions on how these visualizations could be improved so that she can gain more insights.</p>
+
+        <p>In the final part of the interview, I asked the participants to do a card sorting exercise in which we gave participants 33 different smartwatch-sized data visualization cards. Each participant organized these cards into self-defined groups. Then, I generated a similarity matrix and a hierarchical clustering dendrogram to analyse the groups.</p>
+        </div>
+        <img src="images/interview_cards.png" width="50%" />
+        <div style="text-align:left; padding-left: 3em; padding-right: 3em">
+        <p>Figure 2: In the card sorting exercise, we gave these 33 visualizations showing fitness data. They were inspired from the visualizations on current trackers.</p>
+        </div>
+        <img src="images/interview_cardsorting.png" width="20%" />
+        <p>Figure 3: One of the participants organising the cards into different self-defined groups.</p>
+        <div style="text-align:left; padding-left: 3em; padding-right: 3em">
+        <p>
+            Results
+             <ul>
+                <li>   All participants remembered the rough layout on the screen of their tracker which included steps, heart rate and other available information. 5/10 participants forgot calories. 2/10 participants only wrote the numerical value of the tracked data and forgot to draw the visualisation that is shown around it. </li>
+                <li> 8/10 participants looked at the tracker more frequently than the app but for majority of the wearers, sleep data was not shown directly on the tracker. </li>
+                <li>  4/10 participants of them wanted to see previous night’s sleep data on the tracker directly without using the phone. </li>
+                <li>  In the card sorting exercise, 6/10 participants grouped cards based on when they would check the visualization (when they wake up, in the evening, once a week, rarely). Last night’s sleep data was often placed together. So, we decided to focus on sleep data in the next step. </li>
+            </ul>
+        </p>
+        </div>
+    </div>
+
+     <div id="skills" class="background-alt">
+        <h2 class="heading" style="color: rgb(32,90,90);">QUESTIONNAIRE ON SLEEP VISUALIZATIONS</h2>
+        <div style="text-align:left; padding-left: 3em; padding-right: 3em">
+            <p>
+                To learn more about visualization use and preferences for sleep data, we designed and deployed an online questionnaire on Google Forms. The questionnaire included questions about fitness tracker details, tracking behaviour, and preferences for seeing sleep data. We ran these questionnaires twice (second time with some updates) because we wanted to get a few more insights the second time. We received 146 and 108 responses in the two questionnaires respectively. 
+            </p>
+            <p>
+                The first section had questions about the type of tracker, usage period and frequency. In the second section, there were questions specific to sleep data like <i>“When do you check your sleep data on your tracker?”</i> (to understand the context) and <i>“Regardless of what your tracker can actually show right now, what kind of sleep data would you like to see directly on the tracker?” </i>(to understand their preferences).  
+                In the final section, respondents gave their preferences for sleep visualizations representing sleep duration and phases data in various granularities: previous night, last week overview, monthly overview and social comparison. These visualizations were designed by me and inspired by designs from commercial trackers.
+                
+            </p>
+
+            <img src="images/survey_pref.png" width="100%" />
+        </div>
+         <p>Figure 4: Preferences of 108 respondents for different types of sleep data. Orange borders highlight the most preferred designs.</p><br>
+         <img src="images/sleep_data_pref.png" width="60%" />
+         <p>Figure 5: Responses to question: "Regardless of what your tracker can actually show right now, what kind of sleep data would you like to see directly on the tracker?"</p> <br>
+         <img src="images/sleep_vis_text.png" width="40%" />
+         <p>Figure 6: Responses to question: "When you check sleep data on your tracker, do you pay attention to the visualizations or the numbers?"</p>
+    </div>
+
+    <div id="contact" class="background-alt">
+        <h2 class="heading" style="color: rgb(32,90,90);">CONTROLLED EXPERIMENT</h2>
+        <div style="text-align:left; padding-left: 3em; padding-right: 3em">
+            <p>
+                I am currently preparing to run an experiment on a smartwatch to test how screen size (smartwatch vs wristband) affects readability of sleep charts. I will ask 12 participants to do simple reading and comparison tasks. There has been a similar perception study glanceability study done recently on a smartwatch to test the accuracy of reading various charts and I would use the same methodology to test for glanceability of sleep visualizations.
+               
+            </p>
+        </div>
+         <img src="images/bigscreenvis.jpg" width="20%" />
+         <img src="images/smallscreenvis.jpg" width="20%" />
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2019 Ranjini Aravind
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/ranjini1992" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/ranjinia" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
